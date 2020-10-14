@@ -39,6 +39,43 @@ V8 JavaScript 内存占用分析。
 1. `__proto__` 是原型链。
 2. `map` 就是很多文章都在介绍的 V8 对象的黑魔法 Hidden Class。
 
+## 使用 V8 进行调试
+
+V8 的 `%DebugPrint()` 函数可以打印出对象的调试信息。这需要手动使用 `--is_debug=true` 参数来编译 V8。
+
+代码：
+
+```js
+let o = {};
+%DebugPrint(o);
+```
+
+运行：`d8 --allow_natives_syntax heap.js`
+
+输出：
+
+```plain
+DebugPrint: 0x2604080c60e9: [JS_OBJECT_TYPE]
+ - map: 0x2604082802d9 <Map(HOLEY_ELEMENTS)> [FastProperties]
+ - prototype: 0x2604082413c9 <Object map = 0x2604082801c1>
+ - elements: 0x2604080406e9 <FixedArray[0]> [HOLEY_ELEMENTS]
+ - properties: 0x2604080406e9 <FixedArray[0]> {}
+0x2604082802d9: [Map]
+ - type: JS_OBJECT_TYPE
+ - instance size: 28
+ - inobject properties: 4
+ - elements kind: HOLEY_ELEMENTS
+ - unused property fields: 4
+ - enum length: invalid
+ - back pointer: 0x26040804030d <undefined>
+ - prototype_validity cell: 0x2604081c0451 <Cell value= 1>
+ - instance descriptors (own) #0: 0x2604080401b5 <DescriptorArray[0]>
+ - prototype: 0x2604082413c9 <Object map = 0x2604082801c1>
+ - constructor: 0x2604082413e5 <JSFunction Object (sfi = 0x2604081c5869)>
+ - dependent code: 0x2604080401ed <Other heap object (WEAK_FIXED_ARRAY_TYPE)>
+ - construction counter: 0
+```
+
 ## License
 
 本<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由 <a xmlns:cc="https://creativecommons.org/ns#" href="https://justjavac.com" property="cc:attributionName" rel="cc:attributionURL">justjavac</a> 创作，采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a>进行许可。凡是转载的文章，翻译的文章，或者由其他作者投稿的文章，版权归原作者所有。
