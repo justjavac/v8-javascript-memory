@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>v8-javascript-memory</title>
+  </head>
+
+  <body>
+    <script>
+        var v8_memory_s;
+        var v8_memory_n;
+        var v8_memory_o;
+
+        setTimeout(() => {
+            v8_memory_s = Symbol("s");
+            v8_memory_n = Object.create(null);
+            v8_memory_o = {};
+        }, 5000);
+    </script>
+  </body>
+</html>
