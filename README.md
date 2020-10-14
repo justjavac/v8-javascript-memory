@@ -10,9 +10,9 @@ V8 JavaScript 内存占用分析。
 
 ![](./screen.png)
 
-    1. 选择 Memory 标签页
-    1. 点击 take heap snapsshot
-    1. 在过滤框中输入 `ho` 快速过滤出 holder
+  1. 选择 Memory 标签页
+  1. 点击 take heap snapsshot
+  1. 在过滤框中输入 `ho` 快速过滤出 holder
 
 ## 名次解释
 
