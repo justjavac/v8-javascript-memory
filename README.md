@@ -10,7 +10,7 @@ V8 JavaScript 内存占用分析。
 
 1. 打开 Dev Tools，如图：
 
-![](./screen.png)
+  ![](./screen.png)
 
   1. 选择 Memory 标签页
   1. 点击 take heap snapsshot
