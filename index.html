@@ -8,15 +8,12 @@
 
   <body>
     <script>
-        var v8_memory_s;
-        var v8_memory_n;
-        var v8_memory_o;
+        function Holder() {}
+        var holder = new Holder()
 
-        setTimeout(() => {
-            v8_memory_s = Symbol("s");
-            v8_memory_n = Object.create(null);
-            v8_memory_o = {};
-        }, 5000);
+        holder.s = Symbol("s")
+        holder.n = Object.create(null)
+        holder.o = {}
     </script>
   </body>
 </html>
