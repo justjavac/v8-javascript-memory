@@ -2,6 +2,8 @@
 
 V8 JavaScript 内存占用分析。
 
+> 回答知乎的问题：[v8 中 Symbol() 、Object.create(null) 和 {} 的内存占用分别是多少？](https://www.zhihu.com/question/425300093/answer/1523228095)
+
 ## 步骤
 
 1. 使用 Chrome 浏览器访问 <https://justjavac.com/v8-javascript-memory/>
