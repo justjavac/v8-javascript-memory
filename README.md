@@ -76,6 +76,8 @@ DebugPrint: 0x2604080c60e9: [JS_OBJECT_TYPE]
  - construction counter: 0
 ```
 
+**注：**虽然 node 和 deno 都支持 V8 的 `--allow_natives_syntax` 参数，但是如果你使用 node 或者 deno 运行，只能得到一行类似 `0x053bedbc1399 <Object map = 0x53b630d1d51>` 的输出。 如果想得到详细的输出，必须手动编译，并且在编译过程中增加 `--is_debug=true` 参数。
+
 ## License
 
 本<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由 <a xmlns:cc="https://creativecommons.org/ns#" href="https://justjavac.com" property="cc:attributionName" rel="cc:attributionURL">justjavac</a> 创作，采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a>进行许可。凡是转载的文章，翻译的文章，或者由其他作者投稿的文章，版权归原作者所有。
