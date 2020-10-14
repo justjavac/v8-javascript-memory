@@ -36,3 +36,7 @@ V8 JavaScript 内存占用分析。
 
 1. `__proto__` 是原型链。
 2. `map` 就是很多文章都在介绍的 V8 对象的黑魔法 Hidden Class。
+
+## License
+
+本<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由 <a xmlns:cc="https://creativecommons.org/ns#" href="https://justjavac.com" property="cc:attributionName" rel="cc:attributionURL">justjavac</a> 创作，采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a>进行许可。凡是转载的文章，翻译的文章，或者由其他作者投稿的文章，版权归原作者所有。
