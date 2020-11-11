@@ -76,7 +76,7 @@ DebugPrint: 0x2604080c60e9: [JS_OBJECT_TYPE]
  - construction counter: 0
 ```
 
-**注：**虽然 node 和 deno 都支持 V8 的 `--allow_natives_syntax` 参数，但是如果你使用 node 或者 deno 运行，只能得到一行类似 `0x053bedbc1399 <Object map = 0x53b630d1d51>` 的输出。 如果想得到详细的输出，必须手动编译，并且在编译过程中增加 `--is_debug=true` 参数。
+**注：** 虽然 node 和 deno 都支持 V8 的 `--allow_natives_syntax` 参数，但是如果你使用 node 或者 deno 运行，只能得到一行类似 `0x053bedbc1399 <Object map = 0x53b630d1d51>` 的输出。 如果想得到详细的输出，必须手动编译，并且在编译过程中增加 `--is_debug=true` 参数。
 
 ## License
 
