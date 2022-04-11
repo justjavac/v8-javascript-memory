@@ -16,7 +16,7 @@ V8 JavaScript 内存占用分析。
   1. 点击 take heap snapshots
   1. 在过滤框中输入 `ho` 快速过滤出 holder
 
-## 名次解释
+## 名词解释
 
 **Shallow Size**：对象自身占用内存的大小，不包括它引用的对象。JavaScript 对象会将一些内存用于自身的说明和保存中间值。通常，只有数组和字符串会有明显的浅层大小。
 
